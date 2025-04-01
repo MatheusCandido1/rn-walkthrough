@@ -2,7 +2,9 @@ On each branch, different libraries are used, and all features are tested on the
 
 # branch "react-native-copilot"
 
-![ ](/Users/metehanzorluoglu/LocalDocuments/rn-walkthrough/react-native-copilot.gif)
+<p align="center">
+  <img src="./react-native-copilot.gif" width="300" />
+</p>
 
 ## Advantages
 - React Native Copilot is easy to implement with no code change necessary, via simple CopilotStep wrappers over components.
