@@ -3,7 +3,7 @@ On each branch, different libraries are used, and all features are tested on the
 # branch "react-native-copilot"
 
 <p align="center">
-  <img src="./react-native-copilot.gif" width="300" />
+  <img src="./react-native-copilot.gif" width="200" />
 </p>
 
 ## Advantages
