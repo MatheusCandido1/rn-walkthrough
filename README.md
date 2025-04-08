@@ -3,7 +3,7 @@ On each branch, different libraries are used, and all features are tested on the
 # branch "react-native-interactive-walkthrough"
 
 <p align="center">
-  <img src="./react-native-interactive-walkthrought.gif" width="200" />
+  <img src="./react-native-interactive-walkthrough.gif" width="200" />
 </p>
 
 ## Advantages
