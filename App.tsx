@@ -8,7 +8,7 @@ export default function App(): React.JSX.Element {
     <WalkthroughProvider
       backdropColor="rgba(0,0,0,0.7)"
       transitionDuration={300}
-      debug={true} // Enable debug mode for troubleshooting
+      debug={true}
     >
       <NavigationContainer>
         <Tabs />
