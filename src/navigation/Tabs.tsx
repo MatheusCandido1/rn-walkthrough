@@ -1,19 +1,26 @@
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-
-import { View } from "react-native";
-import { Home } from "../views/Home";
-import { Settings } from "../views/Settings";
-import { Profile } from "../views/Profile";
-
+import React from 'react';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { Home } from '../views/Home';
+import { Profile } from '../views/Profile';
+import { Settings } from '../views/Settings';
+import { WalkthroughButton } from '../components/WalkthroughButton';
+import { View } from 'react-native';
 
 const Tab = createBottomTabNavigator();
 
-export function Tabs() {
+export const Tabs = () => {
   return (
-    <Tab.Navigator>
-      <Tab.Screen name="Home" component={Home} />
-      <Tab.Screen name="Settings" component={Settings} />
-      <Tab.Screen name="Profile" component={Profile} />
-    </Tab.Navigator>
-  )
-}
+    <View style={{ flex: 1 }}>
+      <Tab.Navigator
+        screenOptions={{
+          tabBarStyle: { position: 'absolute' },
+        }}
+      >
+        <Tab.Screen name="Home" component={Home} />
+        <Tab.Screen name="Profile" component={Profile} />
+        <Tab.Screen name="Settings" component={Settings} />
+      </Tab.Navigator>
+      <WalkthroughButton />
+    </View>
+  );
+};

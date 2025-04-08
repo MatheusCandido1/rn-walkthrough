@@ -1,21 +1,18 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
-
 import React from 'react';
-import { View } from 'react-native';
-import { Tabs } from './src/navigation/Tabs';
 import { NavigationContainer } from '@react-navigation/native';
+import { WalkthroughProvider } from 'react-native-interactive-walkthrough';
+import { Tabs } from './src/navigation/Tabs';
 
 export default function App(): React.JSX.Element {
   return (
-    <View style={{ flex: 1 }}>
+    <WalkthroughProvider
+      backdropColor="rgba(0,0,0,0.7)"
+      transitionDuration={300}
+      debug={true} // Enable debug mode for troubleshooting
+    >
       <NavigationContainer>
         <Tabs />
       </NavigationContainer>
-    </View>
+    </WalkthroughProvider>
   );
 }
